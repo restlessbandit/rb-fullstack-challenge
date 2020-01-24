@@ -1,9 +1,7 @@
 import React from 'react';
-// import { css } from 'styled-components';
+import { css } from 'styled-components';
 
 import { useSelect } from '../../utils/db';
-
-import { css } from 'styled-components';
 
 const JobList = ({ className }) => {
   const { error, response } = useSelect(
