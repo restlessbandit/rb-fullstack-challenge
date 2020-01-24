@@ -1,0 +1,17 @@
+# for development, don't move this to app/ui
+version: "2.1"
+
+services:
+  challenge_db:
+    build: ./db
+    ports:
+      - "${DB_PORT:-7081}:5432"
+    restart: always
+  challenge_ui:
+    build: ./ui
+    ports:
+      - "${UI_PORT:-7080}:3000"
+    environment:
+      - "PG_HOST=challenge_db"
+      - "PG_PORT=5432"
+    restart: always

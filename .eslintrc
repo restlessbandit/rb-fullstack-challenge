@@ -1,0 +1,30 @@
+{
+  "extends": ["react-app"],
+  "plugins": [
+    "babel",
+    "sort-keys-fix",
+    "sort-destructure-keys",
+    "autofix",
+    "react"
+  ],
+  "parser": "babel-eslint",
+  "rules": {
+    "sort-keys-fix/sort-keys-fix": 2,
+    "autofix/sort-vars": 2,
+    "no-console": 0,
+    "no-unused-vars": 2,
+    "arrow-body-style": ["warn", "as-needed"],
+    "sort-destructure-keys/sort-destructure-keys": [
+      2,
+      { "caseSensitive": true }
+    ],
+    "react/jsx-sort-props": 2,
+    "no-unused-expressions": 0,
+    "babel/no-unused-expressions": 2
+  },
+  "settings": {
+    "react": {
+      "version": "16.8.6"
+    }
+  }
+}

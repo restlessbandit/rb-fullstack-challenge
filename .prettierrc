@@ -1,0 +1,8 @@
+{
+  "overrides": [
+    {
+      "files": ["*.js", "*.jsx"],
+      "options": { "trailingComma": "es5", "singleQuote": true }
+    }
+  ]
+}
